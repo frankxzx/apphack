@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01424B8422684B1400131CA4 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01424B8322684B1400131CA4 /* MDConfig.plist */; };
+		01424B8E22684B1400131CA4 /* libMockDingDingDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01424B8D22684B1400131CA4 /* libMockDingDingDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		01424B9322684B1400131CA4 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01424B9222684B1400131CA4 /* JavaScriptCore.framework */; };
+		01424B9522684B1400131CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01424B9422684B1400131CA4 /* Foundation.framework */; };
+		01424B9722684B1400131CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01424B9622684B1400131CA4 /* UIKit.framework */; };
+		01424B9C22684B1400131CA4 /* MockDingDingDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01424B9B22684B1400131CA4 /* MockDingDingDylib.mm */; };
+		01424B9F22684B1400131CA4 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424B9E22684B1400131CA4 /* MDConfigManager.h */; };
+		01424BA122684B1400131CA4 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01424BA022684B1400131CA4 /* MDConfigManager.m */; };
+		01424BA322684B1400131CA4 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424BA222684B1400131CA4 /* MDCycriptManager.h */; };
+		01424BA522684B1400131CA4 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01424BA422684B1400131CA4 /* MDCycriptManager.m */; };
+		01424BA722684B1400131CA4 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424BA622684B1400131CA4 /* MDMethodTrace.h */; };
+		01424BA922684B1400131CA4 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 01424BA822684B1400131CA4 /* MDMethodTrace.m */; };
+		01424BAC22684B1400131CA4 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 01424BAB22684B1400131CA4 /* a1a2-selectortramps-arm.s */; };
+		01424BAE22684B1400131CA4 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 01424BAD22684B1400131CA4 /* a1a2-selectortramps-arm64.s */; };
+		01424BB022684B1400131CA4 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 01424BAF22684B1400131CA4 /* a1a2-selectortramps-i386.s */; };
+		01424BB222684B1400131CA4 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 01424BB122684B1400131CA4 /* a1a2-selectortramps-x86_64.s */; };
+		01424BB422684B1400131CA4 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 01424BB322684B1400131CA4 /* a2a3-selectortramps-arm.s */; };
+		01424BB622684B1400131CA4 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 01424BB522684B1400131CA4 /* a2a3-selectortramps-i386.s */; };
+		01424BB822684B1500131CA4 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 01424BB722684B1500131CA4 /* a2a3-selectortramps-x86_64.s */; };
+		01424BBA22684B1500131CA4 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424BB922684B1500131CA4 /* OCMethodTrace.h */; };
+		01424BBC22684B1500131CA4 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 01424BBB22684B1500131CA4 /* OCMethodTrace.m */; };
+		01424BBE22684B1500131CA4 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424BBD22684B1500131CA4 /* OCSelectorTrampolines.h */; };
+		01424BC022684B1500131CA4 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01424BBF22684B1500131CA4 /* OCSelectorTrampolines.mm */; };
+		01424BC422684B1500131CA4 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424BC322684B1500131CA4 /* LLDBTools.h */; };
+		01424BC622684B1500131CA4 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01424BC522684B1500131CA4 /* LLDBTools.mm */; };
+		01424BCB22684B1500131CA4 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 01424BCA22684B1500131CA4 /* AntiAntiDebug.m */; };
+		01424BCE22684B1500131CA4 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 01424BCD22684B1500131CA4 /* fishhook.c */; };
+		01424BD022684B1500131CA4 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424BCF22684B1500131CA4 /* fishhook.h */; };
+		01424BD222684B1500131CA4 /* MockDingDingDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 01424BD122684B1500131CA4 /* MockDingDingDylib.h */; };
+		01424BD422684B1500131CA4 /* MockDingDingDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 01424BD322684B1500131CA4 /* MockDingDingDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01424B8F22684B1400131CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01424B7122684B1400131CA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01424B8C22684B1400131CA4;
+			remoteInfo = MockDingDingDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01424B7922684B1400131CA4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01424B8E22684B1400131CA4 /* libMockDingDingDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01424B7C22684B1400131CA4 /* MockDingDing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockDingDing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01424B7F22684B1400131CA4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		01424B8122684B1400131CA4 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		01424B8322684B1400131CA4 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		01424B8722684B1400131CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01424B8D22684B1400131CA4 /* libMockDingDingDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMockDingDingDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		01424B9222684B1400131CA4 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		01424B9422684B1400131CA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01424B9622684B1400131CA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01424B9A22684B1400131CA4 /* MockDingDingDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = MockDingDingDylib.xm; path = Logos/MockDingDingDylib.xm; sourceTree = "<group>"; };
+		01424B9B22684B1400131CA4 /* MockDingDingDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MockDingDingDylib.mm; path = Logos/MockDingDingDylib.mm; sourceTree = "<group>"; };
+		01424B9E22684B1400131CA4 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		01424BA022684B1400131CA4 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		01424BA222684B1400131CA4 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		01424BA422684B1400131CA4 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		01424BA622684B1400131CA4 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		01424BA822684B1400131CA4 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		01424BAB22684B1400131CA4 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		01424BAD22684B1400131CA4 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		01424BAF22684B1400131CA4 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		01424BB122684B1400131CA4 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		01424BB322684B1400131CA4 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		01424BB522684B1400131CA4 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		01424BB722684B1500131CA4 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		01424BB922684B1500131CA4 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		01424BBB22684B1500131CA4 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		01424BBD22684B1500131CA4 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		01424BBF22684B1500131CA4 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		01424BC122684B1500131CA4 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		01424BC322684B1500131CA4 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		01424BC522684B1500131CA4 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		01424BC822684B1500131CA4 /* MockDingDingDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MockDingDingDylib-Prefix.pch"; sourceTree = "<group>"; };
+		01424BCA22684B1500131CA4 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		01424BCD22684B1500131CA4 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		01424BCF22684B1500131CA4 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		01424BD122684B1500131CA4 /* MockDingDingDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockDingDingDylib.h; sourceTree = "<group>"; };
+		01424BD322684B1500131CA4 /* MockDingDingDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockDingDingDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01424B7622684B1400131CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01424B8A22684B1400131CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01424B9322684B1400131CA4 /* JavaScriptCore.framework in Frameworks */,
+				01424B9722684B1400131CA4 /* UIKit.framework in Frameworks */,
+				01424B9522684B1400131CA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01424B7022684B1400131CA4 = {
+			isa = PBXGroup;
+			children = (
+				01424B7E22684B1400131CA4 /* MockDingDing */,
+				01424B9822684B1400131CA4 /* MockDingDingDylib */,
+				01424B9122684B1400131CA4 /* Frameworks */,
+				01424B7D22684B1400131CA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01424B7D22684B1400131CA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01424B7C22684B1400131CA4 /* MockDingDing.app */,
+				01424B8D22684B1400131CA4 /* libMockDingDingDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01424B7E22684B1400131CA4 /* MockDingDing */ = {
+			isa = PBXGroup;
+			children = (
+				01424B7F22684B1400131CA4 /* icon.png */,
+				01424B8722684B1400131CA4 /* Info.plist */,
+				01424B8022684B1400131CA4 /* Scripts */,
+				01424B8222684B1400131CA4 /* Config */,
+				01424B8522684B1400131CA4 /* TargetApp */,
+			);
+			path = MockDingDing;
+			sourceTree = "<group>";
+		};
+		01424B8022684B1400131CA4 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				01424B8122684B1400131CA4 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		01424B8222684B1400131CA4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				01424B8322684B1400131CA4 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		01424B8522684B1400131CA4 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		01424B9122684B1400131CA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01424B9222684B1400131CA4 /* JavaScriptCore.framework */,
+				01424B9422684B1400131CA4 /* Foundation.framework */,
+				01424B9622684B1400131CA4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01424B9822684B1400131CA4 /* MockDingDingDylib */ = {
+			isa = PBXGroup;
+			children = (
+				01424BD122684B1500131CA4 /* MockDingDingDylib.h */,
+				01424BD322684B1500131CA4 /* MockDingDingDylib.m */,
+				01424B9922684B1400131CA4 /* Logos */,
+				01424B9D22684B1400131CA4 /* Config */,
+				01424BAA22684B1400131CA4 /* Trace */,
+				01424BC222684B1500131CA4 /* Tools */,
+				01424BC922684B1500131CA4 /* AntiAntiDebug */,
+				01424BCC22684B1500131CA4 /* fishhook */,
+				01424BC722684B1500131CA4 /* Supporting Files */,
+			);
+			path = MockDingDingDylib;
+			sourceTree = "<group>";
+		};
+		01424B9922684B1400131CA4 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				01424B9A22684B1400131CA4 /* MockDingDingDylib.xm */,
+				01424B9B22684B1400131CA4 /* MockDingDingDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		01424B9D22684B1400131CA4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				01424B9E22684B1400131CA4 /* MDConfigManager.h */,
+				01424BA022684B1400131CA4 /* MDConfigManager.m */,
+				01424BA222684B1400131CA4 /* MDCycriptManager.h */,
+				01424BA422684B1400131CA4 /* MDCycriptManager.m */,
+				01424BA622684B1400131CA4 /* MDMethodTrace.h */,
+				01424BA822684B1400131CA4 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		01424BAA22684B1400131CA4 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				01424BAB22684B1400131CA4 /* a1a2-selectortramps-arm.s */,
+				01424BAD22684B1400131CA4 /* a1a2-selectortramps-arm64.s */,
+				01424BAF22684B1400131CA4 /* a1a2-selectortramps-i386.s */,
+				01424BB122684B1400131CA4 /* a1a2-selectortramps-x86_64.s */,
+				01424BB322684B1400131CA4 /* a2a3-selectortramps-arm.s */,
+				01424BB522684B1400131CA4 /* a2a3-selectortramps-i386.s */,
+				01424BB722684B1500131CA4 /* a2a3-selectortramps-x86_64.s */,
+				01424BB922684B1500131CA4 /* OCMethodTrace.h */,
+				01424BBB22684B1500131CA4 /* OCMethodTrace.m */,
+				01424BBD22684B1500131CA4 /* OCSelectorTrampolines.h */,
+				01424BBF22684B1500131CA4 /* OCSelectorTrampolines.mm */,
+				01424BC122684B1500131CA4 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		01424BC222684B1500131CA4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				01424BC322684B1500131CA4 /* LLDBTools.h */,
+				01424BC522684B1500131CA4 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		01424BC722684B1500131CA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01424BC822684B1500131CA4 /* MockDingDingDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01424BC922684B1500131CA4 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				01424BCA22684B1500131CA4 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		01424BCC22684B1500131CA4 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				01424BCD22684B1500131CA4 /* fishhook.c */,
+				01424BCF22684B1500131CA4 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01424B8B22684B1400131CA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01424BA322684B1400131CA4 /* MDCycriptManager.h in Headers */,
+				01424BA722684B1400131CA4 /* MDMethodTrace.h in Headers */,
+				01424BD022684B1500131CA4 /* fishhook.h in Headers */,
+				01424BD222684B1500131CA4 /* MockDingDingDylib.h in Headers */,
+				01424BC422684B1500131CA4 /* LLDBTools.h in Headers */,
+				01424B9F22684B1400131CA4 /* MDConfigManager.h in Headers */,
+				01424BBE22684B1500131CA4 /* OCSelectorTrampolines.h in Headers */,
+				01424BBA22684B1500131CA4 /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01424B7B22684B1400131CA4 /* MockDingDing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01424BDA22684B1500131CA4 /* Build configuration list for PBXNativeTarget "MockDingDing" */;
+			buildPhases = (
+				01424B7522684B1400131CA4 /* Sources */,
+				01424B7622684B1400131CA4 /* Frameworks */,
+				01424B7722684B1400131CA4 /* ShellScript */,
+				01424B7822684B1400131CA4 /* Resources */,
+				01424B7922684B1400131CA4 /* CopyFiles */,
+				01424B7A22684B1400131CA4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01424B9022684B1400131CA4 /* PBXTargetDependency */,
+			);
+			name = MockDingDing;
+			productName = MockDingDing;
+			productReference = 01424B7C22684B1400131CA4 /* MockDingDing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01424B8C22684B1400131CA4 /* MockDingDingDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01424BD722684B1500131CA4 /* Build configuration list for PBXNativeTarget "MockDingDingDylib" */;
+			buildPhases = (
+				01424B8822684B1400131CA4 /* ShellScript */,
+				01424B8922684B1400131CA4 /* Sources */,
+				01424B8A22684B1400131CA4 /* Frameworks */,
+				01424B8B22684B1400131CA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MockDingDingDylib;
+			productName = MockDingDingDylib;
+			productReference = 01424B8D22684B1400131CA4 /* libMockDingDingDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01424B7122684B1400131CA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = touchspring;
+				TargetAttributes = {
+					01424B7B22684B1400131CA4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					01424B8C22684B1400131CA4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 01424B7422684B1400131CA4 /* Build configuration list for PBXProject "MockDingDing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01424B7022684B1400131CA4;
+			productRefGroup = 01424B7D22684B1400131CA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01424B7B22684B1400131CA4 /* MockDingDing */,
+				01424B8C22684B1400131CA4 /* MockDingDingDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01424B7822684B1400131CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01424B8422684B1400131CA4 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01424B7722684B1400131CA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		01424B7A22684B1400131CA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		01424B8822684B1400131CA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01424B7522684B1400131CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01424B8922684B1400131CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01424BA522684B1400131CA4 /* MDCycriptManager.m in Sources */,
+				01424BAE22684B1400131CA4 /* a1a2-selectortramps-arm64.s in Sources */,
+				01424BAC22684B1400131CA4 /* a1a2-selectortramps-arm.s in Sources */,
+				01424BD422684B1500131CA4 /* MockDingDingDylib.m in Sources */,
+				01424BB222684B1400131CA4 /* a1a2-selectortramps-x86_64.s in Sources */,
+				01424BBC22684B1500131CA4 /* OCMethodTrace.m in Sources */,
+				01424BA122684B1400131CA4 /* MDConfigManager.m in Sources */,
+				01424BCE22684B1500131CA4 /* fishhook.c in Sources */,
+				01424BCB22684B1500131CA4 /* AntiAntiDebug.m in Sources */,
+				01424BC022684B1500131CA4 /* OCSelectorTrampolines.mm in Sources */,
+				01424BB022684B1400131CA4 /* a1a2-selectortramps-i386.s in Sources */,
+				01424BB622684B1400131CA4 /* a2a3-selectortramps-i386.s in Sources */,
+				01424BB422684B1400131CA4 /* a2a3-selectortramps-arm.s in Sources */,
+				01424B9C22684B1400131CA4 /* MockDingDingDylib.mm in Sources */,
+				01424BC622684B1500131CA4 /* LLDBTools.mm in Sources */,
+				01424BB822684B1500131CA4 /* a2a3-selectortramps-x86_64.s in Sources */,
+				01424BA922684B1400131CA4 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01424B9022684B1400131CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01424B8C22684B1400131CA4 /* MockDingDingDylib */;
+			targetProxy = 01424B8F22684B1400131CA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01424BD522684B1500131CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01424BD622684B1500131CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01424BD822684B1500131CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJ6D8L57PH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MockDingDingDylib/MockDingDingDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMockDingDingDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MockDingDingDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		01424BD922684B1500131CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = JJ6D8L57PH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MockDingDingDylib/MockDingDingDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMockDingDingDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MockDingDingDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01424BDB22684B1500131CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJ6D8L57PH;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MockDingDing/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01424BDC22684B1500131CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJ6D8L57PH;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MockDingDing/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01424B7422684B1400131CA4 /* Build configuration list for PBXProject "MockDingDing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01424BD522684B1500131CA4 /* Debug */,
+				01424BD622684B1500131CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01424BD722684B1500131CA4 /* Build configuration list for PBXNativeTarget "MockDingDingDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01424BD822684B1500131CA4 /* Debug */,
+				01424BD922684B1500131CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01424BDA22684B1500131CA4 /* Build configuration list for PBXNativeTarget "MockDingDing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01424BDB22684B1500131CA4 /* Debug */,
+				01424BDC22684B1500131CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01424B7122684B1400131CA4 /* Project object */;
+}
